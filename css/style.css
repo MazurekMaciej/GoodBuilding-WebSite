@@ -1,0 +1,431 @@
+.sidebar-container {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #212529;
+  color: #fff;
+}
+
+#logo_container img{
+  width: 8rem;
+  height: 3rem;
+  max-width: 100%; 
+  height: auto;
+}
+@media only screen and (max-width: 800px) {
+
+  #logo_container img{
+          width: 5rem;
+          height: auto;
+  }
+
+}
+
+.top-container {
+  background-image: url("../images/main_background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+}
+@media only screen and (max-width: 800px) {
+  .top-container{
+    height: auto;
+  }
+}
+
+.content-container {
+  padding-top: 60px;
+  /* height: 85vh; */
+  /* padding-left: 220px; */
+  text-align: center;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.sidebar-logo {
+  padding: 10px 15px 10px 30px;
+  font-size: 20px;
+  background-color: #2574A9;
+}
+
+.sidebar-navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sidebar-navigation li {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+}
+
+.sidebar-navigation li a {
+  padding: 10px 15px 10px 30px;
+  display: block;
+  color: #fff;
+}
+
+.sidebar-navigation li .fa {
+  margin-right: 10px;
+}
+
+.sidebar-navigation li a:active, .sidebar-navigation li a:hover, .sidebar-navigation li a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.sidebar-navigation li::before {
+  background-color: #2574A9;
+  position: absolute;
+  content: '';
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 3px;
+  z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+  width: 100%;
+}
+
+.sidebar-navigation .header {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #151515;
+  padding: 10px 15px 10px 30px;
+}
+
+.sidebar-navigation .header::before {
+  background-color: transparent;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.jumbotron {
+  background-color: unset;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-area {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+.single-service {
+  background-color: #fff;
+  border: 1px solid #eceff8;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+@media (max-width: 767px) {
+  .single-service {
+    padding: 15px;
+  }
+}
+
+.single-service .service-icon i {
+  font-size: 60px;
+  color: #754ef9;
+  line-height: 56px;
+}
+
+.single-service .service-content {
+  margin-top: 11px;
+}
+
+.single-service .service-content .service-title a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #32333c;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single-service .service-content .service-title a:hover {
+  color: #754ef9;
+}
+
+.single-service:hover {
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+}
+
+#header-title {
+  font-size: 75px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 600;
+  line-height: 75px;
+  color: honeydew; 
+  font-size: 74px; 
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 350px) {
+  #header-title{
+    font-size: 67px;
+  }
+}
+
+#greeting{
+  margin-top: 2rem; 
+  font-size: x-large;
+}
+#know_more{
+  margin-top: 2rem; 
+  font-size: x-large;
+}
+@media only screen and (min-width: 1650px) {
+  #header-title {
+    font-size: 94px; 
+    margin-top: 9rem;
+  }
+  #greeting{
+    margin-top: 4rem; 
+    font-size: xx-large;
+  }
+  #know_more{
+    margin-top: 4rem; 
+    font-size: xx-large;
+  }
+}
+
+.about-container-font {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0px;
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 2rem;
+}
+
+#offer {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.offer-container {
+  background-image: url("../images/dark_theme.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+
+  .offer-container{
+   background-position: unset;
+   background-size: unset;
+  }
+ 
+ }
+
+.offer-container-font {
+  color: white;
+  line-height: 28px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-top: 2rem;
+  text-align: left;
+  font: 500 1.15rem/1.5rem "Open Sans", sans-serif;
+}
+@media only screen and (max-width: 400px) {
+  .offer-container-font{
+    font: 500 1.03rem/1.5rem "Open Sans", sans-serif;
+  }
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#gallery{
+  text-align: center;
+}
+
+#gallery-header{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pb_section {
+  padding: 6em 0;
+  position: relative;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .pb_section {
+    padding: 4em 0;
+  }
+}
+
+.pb_section.pb_bg-half:before {
+  top: 50%;
+  content: "";
+  background: #f8f9fa;
+  bottom: 0%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.section-title {
+  color: #252525;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding: 10px 10px;
+  position: relative;
+}
+
+/* Services Item */
+
+.services {
+  background: #F0F0F0;
+  padding:110px 0;
+}
+
+.services-item {
+  background: #fff;
+  border-radius: 4px;
+  padding: 48px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  color:black;
+}
+
+.services-item .icon i {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 48px;
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  color: #00b4d9;
+}
+
+.services-item .services-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services-item .services-content h3 a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.services-item .services-content h3 a:hover {
+  color: #00b4d9;
+}
+
+.services-item .services-content p {
+  line-height: 22px;
+}
+
+.services-item:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#contact-section-container{
+  padding: 80px 0;
+}
+
+.section-container-spacer{
+  margin-bottom: 30px;
+}
+
+.side-contact {
+  -webkit-transform:translateX(-50%);
+  bottom:15px;
+  bottom:1.5rem;
+  color:#fff;
+  font-size:14px;
+  font-size:0.8rem;
+  font-weight:300;
+  left:50%;
+  letter-spacing:2px;
+  position:absolute;
+  text-align:center;
+  text-transform:uppercase;
+  transform:translateX(-50%);
+  width:100%;
+  z-index:2;
+ }
+ @media (min-width:992px) {
+  .side-contact {
+   -webkit-transform:rotate(90deg);
+   -webkit-transform-origin:right bottom;
+   /* left:unset; */
+   right:4.5rem;
+   text-align:unset;
+   transform:rotate(90deg);
+   transform-origin:right bottom;
+   white-space:nowrap;
+   width:unset
+  }
+ }
+ @media only screen and (max-width: 800px) {
+  .side-contact {
+  bottom: auto; 
+  color: black;
+  display:grid;
+   }
+}
+ .side-contact span {
+  margin-right:3rem
+ }
+
+ul {
+  list-style-type: square;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
