@@ -10,6 +10,9 @@
 }
 
 #logo_container img{
+  /* background-image: url(file:///C:/Users/Davie/Desktop/LukasWebSite/images/logo.png);
+  background-position: center;
+  background-size: cover; */
   width: 8rem;
   height: 3rem;
   max-width: 100%; 
@@ -18,17 +21,21 @@
 @media only screen and (max-width: 800px) {
 
   #logo_container img{
+          /* width: 25%; */
           width: 5rem;
           height: auto;
+          /* background-size: 100% auto !important; */
   }
 
 }
 
 .top-container {
-  background-image: url("../images/main_background.jpg");
+  /*background-image: url("../images/main_background.jpg");*/
   background-position: center;
   background-size: cover;
   height: 85vh;
+  /*background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/main_background.jpg');*/
+  background-image: linear-gradient(to bottom, rgba(54, 65, 134, 0.52), rgba(94, 45, 82, 0.73)), url('../images/main_background.jpg');
 }
 @media only screen and (max-width: 800px) {
   .top-container{
@@ -44,6 +51,9 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  /* background-image: url("/C:/Users/Davie/Desktop/LukasWebSite/images/some_background_shit.jpg");
+  background-position: center;
+  background-size: cover; */
 }
 
 .sidebar-logo {
@@ -223,6 +233,8 @@
   }
 }
 
+
+
 .about-container-font {
   color: #212529;
   font-size: 18px;
@@ -242,31 +254,48 @@
 }
 
 .offer-container {
-  background-image: url("../images/dark_theme.jpg");
+  /* height: 80vh; */
+  /*background-image: url("../images/dark_theme.jpg");*/
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(54, 65, 134, 0.52), rgba(94, 45, 82, 0.73)), url('../images/offer_background.jpg');
 }
 @media only screen and (max-width: 800px) {
 
-  .offer-container{
-   background-position: unset;
-   background-size: unset;
-  }
- 
+ .offer-container{
+  background-position: center;
+  background-size: cover;
  }
+
+}
 
 .offer-container-font {
   color: white;
+  /* font-size: 16px;
+  font-weight: 400; */
   line-height: 28px;
   margin: 0px;
   margin-top: 0px;
+  /* font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal; */
   margin-top: 2rem;
   text-align: left;
   font: 500 1.15rem/1.5rem "Open Sans", sans-serif;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
+  .offer-container-font{
+    font: 500 1.00rem/1.5rem "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
   .offer-container-font{
     font: 500 1.03rem/1.5rem "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+  .offer-container-font{
+    font: 500 1.10rem/1.5rem "Open Sans", sans-serif;
   }
 }
 
@@ -409,6 +438,7 @@
    white-space:nowrap;
    width:unset
   }
+
  }
  @media only screen and (max-width: 800px) {
   .side-contact {
@@ -416,12 +446,16 @@
   color: black;
   display:grid;
    }
+   .side-contact a{
+       color: blue;
+   }
 }
  .side-contact span {
-  margin-right:3rem
+  /*margin-right:3rem*/
  }
 
 ul {
+  /* list-style-image: url("file:///C:/Users/Davie/Desktop/LukasWebSite/images/changed.png"); */
   list-style-type: square;
 }
 
